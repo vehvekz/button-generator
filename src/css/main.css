@@ -1,0 +1,86 @@
+
+@font-face {
+	font-family: 'Myriadbold';
+	src: url('../fonts/myriadprosemibold/myriadprosemibold.eot?') format('embedded-opentype'),
+	url('../fonts/myriadprosemibold/myriadprosemibold.woff') format('woff'),
+	url('../fonts/myriadprosemibold/myriadprosemibold.ttf') format('truetype'),
+	url('../fonts/myriadprosemibold/myriadprosemibold.svg#myriadprosemibold') format('svg');
+	font-style: normal;
+	font-weight: bold;
+}
+body{
+	height: 100%;
+	overflow-x: hidden;
+}
+.wrapper{
+	position: relative;
+	min-height: 100%;
+	height: auto !important;
+	overflow: hidden;
+}
+/*Option section*/
+h1{
+	text-transform: uppercase;
+	font-size: 24px;
+	text-align: center;
+}
+h2{
+	text-transform: uppercase;
+	font-size: 18px;
+	text-align: center;
+}
+.input{
+	width: 100%;
+	padding: 0 5px;
+}
+.dimensions{
+	height: 220px;
+}
+dt, dd {
+	line-height: 34px;
+}
+/*Result section*/
+.ui-slider-horizontal{
+	background: url(../img/ui-line.png) repeat-x;
+	height: 12px !important;
+	border-radius: 6px;
+	outline: none !important;
+	margin-top: 11px;
+}
+.ui-slider-horizontal .ui-slider-handle{
+	background: url(../img/ui-cir2.png) no-repeat;
+	width: 25px;
+	height: 25px;
+	top: -6px;
+	outline: none !important;
+}
+.create{
+	display: block;
+	height: auto;
+	width: auto;
+	margin: 40px auto;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 16px;
+	background: #ccc;
+	border: 1px solid #777;
+	border-radius: 0;
+}
+/* Result Html and CSS code */
+#res-code-html, #res-code-css{
+	height: 200px;
+	box-shadow: 0 0 3px 0px rgba(0,0,0,0.25);
+	border: 1px solid rgba(138,138,138,0.6);
+	resize: none;
+	padding: 10px;
+	width: 100%;
+}
+.empty{
+	height: 20px;
+}
+/*Footer*/
+.copy{
+	margin: -20px;
+	padding-top: 50px;
+	text-align: center;
+}
