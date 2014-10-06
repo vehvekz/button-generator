@@ -10,10 +10,8 @@
 		<meta name="description" content="css3 button generator">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link rel="stylesheet" href="src/css/bootstrap.css">
-		<link rel="stylesheet" href="src/css/jquery-ui.css">
-		<link rel="stylesheet" href="src/css/main.css">
-		<script src="dest/vendors/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		<link rel="stylesheet" href="css/build.min.css">
+		<script src="vendors/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -28,19 +26,15 @@
 							<dl class="dl-horizontal">
 								<dt>Border-radius</dt>
 								<dd>
-									<div id="border-rad" aria-disabled="false">
-										<!-- <a href="#"></a> -->
-									</div>
+									<div id="border-rad" aria-disabled="false"></div>
 								</dd>
 								<dt>Border-size</dt>
 								<dd>
-									<div id="border-size" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false">
-										<a class="ui-slider-handle ui-state-default ui-corner-all" href="#"></a>
-									</div>
+									<div id="border-size" aria-disabled="false"></div>
 								</dd>
 								<dt>Text</dt>
 								<dd>
-									<input type="text" class="input" id="text" value="Button">
+									<input type="text" class="input" id="text" value="Button text">
 								</dd>
 							</dl>
 						</div>
@@ -49,7 +43,7 @@
 					<div class="col-md-6">
 						<div class="col-md-9 well dimensions">
 							<h2>Result</h2>
-							<button type="button" class="create" id="result">Button
+							<button type="button" class="create" id="result">Button text
 							</button>
 						</div>
 					</div>
@@ -71,18 +65,28 @@
 						</div>
 					</div>
 				</div>
+				<!-- Email send -->
+				<div class="row">
+					<div class="col-md-4 col-md-offset-4">
+							<div class="email">
+								<input type="text" name="email" placeholder="enter your email">
+								<button class="btn" name="send">Submit</button>
+							</div>
+					</div>
+				</div>
+
 				<div class="empty"></div>
 			</div>
+			<footer class="copy">Alexey Savkin - CSS3 Button Generator</footer>
 		</div>
-		<footer class="copy">Alexey Savkin - CSS3 Button Generator</footer>
+
 
 
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script>window.jQuery || document.write('<script src="src/vendors/jquery-1.11.0.js"><\/script>')</script>
-		<script src="src/vendors/jquery-1.11.0.js"></script>
-		<script src="src/vendors/bootstrap.min.js"></script>
-		<script src="src/vendors/jquery-ui.js"></script>
-		<script src="src/js/common.js"></script>
+		<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.js"><\/script>')</script>
+
+		<script src="vendors/vendors.min.js"></script>
+		<script src="js/build.min.js"></script>
 	</body>
 </html>

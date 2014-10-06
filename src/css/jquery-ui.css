@@ -103,6 +103,8 @@
 	display: block;
 	border: 0;
 	background-position: 0 0;
+	background-color: #444;
+	border-radius: 6px;
 }
 
 /* For IE8 - See #6727 */
